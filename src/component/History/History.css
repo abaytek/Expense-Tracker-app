@@ -1,0 +1,54 @@
+.history {
+    margin: 1rem 0;
+}
+
+.history__message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    background: white;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.05), 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+.history__message span {
+    background-color: rgb(192, 84, 84);
+    padding: 0.3rem 1rem;
+    color: white;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.history__message span:hover {
+    background-color: rgb(179, 22, 22);
+}
+
+.history__message::before {
+    content: '';
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: teal;
+}
+
+.history__message.expense::before {
+    background-color: rgb(217, 60, 60);
+}
+
+.history__text {
+    color: darkred;
+    flex: 3;
+    text-align: left;
+}
+
+.history__head {
+    color: brown;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
