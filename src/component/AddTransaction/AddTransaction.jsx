@@ -14,16 +14,15 @@ const AddTransaction = () => {
   } = useContext(TransactionContext);
 
   const handleClick = () => {
-    if (amount === '' && label === '') {
-      return;
-    } else {
-      const data = { label, amount: parseInt(amount) };
+    if(!(label && amount)) return;
+
+      const data = { label, amount: parseFloat(amount) };
       addTransaction(data);
 
       calculateExpenseTotal(transaction);
       calculateIncomeTotal(transaction);
       calculateTotal(transaction);
-    }
+  
 
     setLabel('');
     setAmount('');
