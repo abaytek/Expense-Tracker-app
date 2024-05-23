@@ -11,7 +11,8 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Sample code
-`const TransactionReducer = (state, action) => {
+````
+const TransactionReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_TRANSACTION':
       return {
@@ -54,4 +55,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 };
 
 export default TransactionReducer;
-`
+````
